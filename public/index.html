@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <title>Weather App</title>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -14,6 +13,7 @@
     <link href="assets/css/main.css" rel="stylesheet">
 
     <script src="js/vendor/jquery/jquery-1.12.1.min.js"></script>
+    <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 
 
@@ -59,7 +59,7 @@
                         <input type="password" class="form-control" id="password" placeholder="Парола">
                         <p class="help-block">Полето "парола" е празно</p>
                     </div>
-test
+
 
                     <button id="login" type="submit" class="btn btn-primary">Влез</button>
                     <button id="register" type="button" class="btn btn-success pull-right">Регистрация</button>
@@ -67,10 +67,53 @@ test
             </div>
         </div>
     </div>
+    <div id="register-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" style="width:360px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Регистрация на нов потребител</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form id="register-form">
+                        <div class="form-group">
+                            <label for="register-user">Потребител</label>
+                            <input type="text" class="form-control" id="register-user" placeholder="Потребител">
+                            <p class="help-block">Полето "потребител" е празно</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-email">Email</label>
+                            <input type="email" class="form-control" id="register-email" placeholder="example@gmail.com">
+                            <p class="help-block">Полето "Email" е празно</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-pass">Парола</label>
+                            <input type="password" class="form-control" id="register-pass" placeholder="Парола">
+                            <p class="help-block">Полето "парола" е празно</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-register-pass">Повтори паролата</label>
+                            <input type="password" class="form-control" id="confirm-register-pass" placeholder="Парола">
+                            <p class="help-block">Полето "парола" е празно</p>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Затвори</button>
+                    <button type="submit" form="register-form"  class="btn btn-primary">Регистрирай</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 </div>
 
+
+
+
 <script>
-    initLoginPage();
+    bindEvents();
 </script>
 </body>
 </html>
