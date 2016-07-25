@@ -1,0 +1,51 @@
+body {
+    background-color: #F0F0F0;
+}
+
+
+
+/*
+    Common CSS
+*/
+
+
+/*
+    Login and Register
+*/
+
+
+.basic-panel {
+    background-color:#fff;
+    border: 1px solid #E7E7E7;
+    box-shadow: -4px 0px 14px -5px rgba(0,0,0,.1);
+    padding:15px;
+}
+
+.login-page nav {
+    background: rgb(151,201,118); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(151,201,118,1) 0%, rgba(85,160,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(151,201,118,1) 0%,rgba(85,160,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(151,201,118,1) 0%,rgba(85,160,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97c976', endColorstr='#55a000',GradientType=0 ); /* IE6-9 */
+
+    height:85px;
+    padding-top:15px;
+}
+.login-page nav h1{
+    color:#fff;
+    display:inline;
+}
+
+.login-page header {
+    margin-top:40px;
+}
+.login-page header p{
+    color:#999;
+}
+.login-page .login-container {
+    margin-top:30px;
+}
+.login-page .help-block {
+    display:none;
+    color:red;
+}
