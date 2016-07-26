@@ -47,3 +47,7 @@ function registerClick(e){
     $('#register-modal').modal('show');
 
 }
+
+function getCurrentTemp (){
+    //http://api.openweathermap.org/data/2.5/weather?q=Plovdvi,bg&appid=5624e56170c7efdcfa0212d03e1677e4
+}

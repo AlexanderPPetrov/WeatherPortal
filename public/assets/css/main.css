@@ -13,6 +13,22 @@ h2 {
     margin-top: 10px;
 }
 
+
+.main-nav {
+    background: rgb(151,201,118); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(151,201,118,1) 0%, rgba(85,160,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(151,201,118,1) 0%,rgba(85,160,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(151,201,118,1) 0%,rgba(85,160,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97c976', endColorstr='#55a000',GradientType=0 ); /* IE6-9 */
+
+    height:70px;
+}
+.main-nav h1{
+    color:#fff;
+    display:inline;
+}
+
+
 /*
     Login and Register
 */
@@ -25,19 +41,6 @@ h2 {
     padding:15px;
 }
 
-.login-page nav {
-    background: rgb(151,201,118); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(151,201,118,1) 0%, rgba(85,160,0,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(151,201,118,1) 0%,rgba(85,160,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(151,201,118,1) 0%,rgba(85,160,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97c976', endColorstr='#55a000',GradientType=0 ); /* IE6-9 */
-
-    height:70px;
-}
-.login-page nav h1{
-    color:#fff;
-    display:inline;
-}
 
 .login-page header {
     margin-top:40px;
@@ -53,6 +56,65 @@ h2 {
     color:red;
 }
 
+/*
+    Menu
+*/
+
+.current-weather {
+    height: 70px;
+    width: 225px;
+    background: rgba(52, 111, 56, 0.6);
+    padding: 10px;
+    position:relative;
+}
+.current-weather .info {
+    position: absolute;
+    color:white;
+    top: 5px;
+    left: 80px;
+}
+
+.current-weather .condition {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #eefd90;
+}
+
+.current-weather .temperature{
+    font-size: 20px;
+}
+
+.current-weather img{
+    height: 50px;
+}
+
+
+.menu a {
+    color: #fff;
+    padding: 0 22px;
+    text-shadow: 1px 1px 1px #172906;
+    background: rgba(52, 111, 56, 0.2);
+    height: 70px;
+    font-size: 16px;
+    line-height: 70px;
+    letter-spacing: 1px;
+    display: inline-block;
+    float:left;
+    border-right:1px solid green;
+}
+.menu a.active {
+    background: rgba(52, 111, 56, 0.4);
+}
+.menu a:first-child{
+    border-left:1px solid green;
+}
+
+.menu a:hover{
+    background: rgba(52, 111, 56, 0.4);
+    text-decoration: none;
+}
+
 @media screen and (max-width: 767px) {
     h1 {
         font-size:28px;
@@ -66,5 +128,8 @@ h2 {
     }
     .login-page header {
         margin-top:26px;
+    }
+    .menu a {
+        font-size:30px;
     }
 }
