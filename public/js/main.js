@@ -7,6 +7,11 @@ function bindEvents(){
 }
 
 function loginClick (e){
+
+    // Prevent the default submit action
+    e.preventDefault();
+
+
     var valid = true,
         username = $('#username').val(),
         password = $('#password').val();
@@ -28,6 +33,7 @@ function loginClick (e){
     }
 
     if(valid){
+        parent.window.location.href = "home.html";
         console.log('submit form')
     }else{
         // Do not submit form
