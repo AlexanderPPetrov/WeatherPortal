@@ -1,5 +1,6 @@
 body {
     background-color: #F0F0F0;
+    font-size: 15px;
 }
 
 
@@ -7,8 +8,27 @@ body {
 /*
     Common CSS
 */
+h1 {
+    font-size:2.400em;
+}
+h2 {
+    font-size:2em;
+}
+p {
+    font-size:1em;
+}
+label {
+    font-size:1em;
+}
 
+.form-control {
+    font-size:0.933em;
+    height:2.267em;
+}
 
+.btn {
+    font-size:0.933em;
+}
 /*
     Login and Register
 */
@@ -28,7 +48,7 @@ body {
     background: linear-gradient(to bottom,  rgba(151,201,118,1) 0%,rgba(85,160,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97c976', endColorstr='#55a000',GradientType=0 ); /* IE6-9 */
 
-    height:85px;
+    height:5.667em;
     padding-top:15px;
 }
 .login-page nav h1{
@@ -48,4 +68,18 @@ body {
 .login-page .help-block {
     display:none;
     color:red;
+}
+
+
+/*
+
+    Media css
+
+*/
+
+
+@media screen and (max-width:1023px) {
+    body {
+        font-size:30px;
+    }
 }
