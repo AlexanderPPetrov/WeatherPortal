@@ -1,8 +1,7 @@
 body {
-    background-color: #F0F0F0;
+    background-color: #e4e4e4;
     font-size: 15px;
 }
-
 
 
 /*
@@ -13,21 +12,27 @@ h2 {
     margin-top: 10px;
 }
 
+p {
+    color:#777;
+}
 
-.main-nav {
+.navbar {
+    margin-bottom:0;
+}
+
+header {
     background: rgb(151,201,118); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(151,201,118,1) 0%, rgba(85,160,0,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba(151,201,118,1) 0%,rgba(85,160,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  rgba(151,201,118,1) 0%,rgba(85,160,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97c976', endColorstr='#55a000',GradientType=0 ); /* IE6-9 */
-
-    height:70px;
+    border-radius:0;
+    border:none;
 }
-.main-nav h1{
+header h1{
     color:#fff;
     display:inline;
 }
-
 
 /*
     Login and Register
@@ -39,58 +44,76 @@ h2 {
     border: 1px solid #E7E7E7;
     box-shadow: -4px 0px 14px -5px rgba(0,0,0,.1);
     padding:15px;
+    margin:30px 0;
 }
 
 
-.login-page header {
-    margin-top:40px;
-}
-.login-page header p{
-    color:#999;
-}
-.login-page .login-container {
-    margin-top:30px;
-}
 .login-page .help-block {
     display:none;
     color:red;
 }
 
+
 /*
-    Menu
+    Header
 */
 
 .current-weather {
     height: 70px;
-    width: 225px;
+    width: 240px;
     background: rgba(52, 111, 56, 0.6);
-    padding: 10px;
+    padding: 7px;
     position:relative;
 }
 .current-weather .info {
     position: absolute;
-    color:white;
+    color: white;
     top: 5px;
     left: 80px;
+    width: 150px;
 }
 
-.current-weather .condition {
-    font-size: 10px;
+.current-weather #current-condition {
+    font-size: 9px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #eefd90;
 }
 
-.current-weather .temperature{
+.current-weather #current-temperature{
     font-size: 20px;
 }
 
-.current-weather img{
-    height: 50px;
+.current-weather .img-container {
+    width: 65px;
+    background: #2b6108;
+    border: 1px solid #8ec366;
+    height: 56px;
 }
 
+.current-weather img{
+    height: 100%;
+    width: 100%;
+}
 
-.menu a {
+/*
+    Navigation
+*/
+
+.navbar-default {
+    background: none;
+    border: none;
+}
+
+.navbar-default li:first-child {
+    border-left:1px solid green;
+}
+
+.navbar-default li {
+    border-right:1px solid green;
+}
+
+.navbar-default .navbar-nav>li>a{
     color: #fff;
     padding: 0 22px;
     text-shadow: 1px 1px 1px #172906;
@@ -100,19 +123,68 @@ h2 {
     line-height: 70px;
     letter-spacing: 1px;
     display: inline-block;
-    float:left;
-    border-right:1px solid green;
-}
-.menu a.active {
-    background: rgba(52, 111, 56, 0.4);
-}
-.menu a:first-child{
-    border-left:1px solid green;
 }
 
-.menu a:hover{
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
     background: rgba(52, 111, 56, 0.4);
-    text-decoration: none;
+    color:#fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    background: rgba(52, 111, 56, 0.4);
+    color:#fff;
+}
+
+/*
+    Home page
+*/
+
+.home-page .edit-post {
+    margin-right:15px;
+}
+
+.home-page .post{
+    margin:0;
+}
+
+/*
+    Friends Page
+*/
+
+.friends-page .found-friend {
+    padding: 10px 5px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+.friends-page .found-friend:last-child {
+    border-bottom:none;
+}
+
+.friends-page .found-friend img {
+    margin-right:15px;
+    width:60px;
+}
+
+.friends-page .friends-table .friend-img {
+    width:100px;
+}
+
+
+.friends-page .friends-table .remove-col {
+    width:130px;
+}
+
+.friends-page #search-result {
+    position: absolute;
+    z-index: 9999;
+    left: 18px;
+    background: #fefefe;
+    top: 89px;
+    right: 53px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    padding-top: 0;
+    display:none;
 }
 
 @media screen and (max-width: 767px) {
@@ -123,13 +195,61 @@ h2 {
         font-size:24px;
         margin-top: 0;
     }
-    .login-page .login-container {
+    .login-page .header-info {
         margin-top:15px;
+        margin-bottom:5px;
     }
-    .login-page header {
-        margin-top:26px;
+
+    .navbar-default li:first-child {
+        border:none;
     }
-    .menu a {
-        font-size:30px;
+
+    .navbar-default li {
+        border:none;
+        border-top:1px solid #7daf55;
+    }
+
+    .navbar-default .navbar-header {
+        background:#2f8c03;
+    }
+
+    .navbar-default .navbar-nav>li>a{
+        width:100%;
+        line-height: 45px;
+        height:auto;
+        padding:0 15px;
+    }
+    .nav-label {
+        position: absolute;
+        left: 45px;
+    }
+    .current-weather {
+        background:none;
+    }
+    .navbar-default .navbar-toggle {
+        margin-top: 17px;
+        margin-right:20px;
+        border-color:#3e8625;
+        background-color: #599836;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background:white;
+    }
+
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color:#599836;
+    }
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border:none;
+        box-shadow:none;
+    }
+
+    .home-page .edit-post {
+        margin-right:0px;
+    }
+
+    .friends-page .friends-table .remove-col {
+        width:60px;
     }
 }

@@ -90,78 +90,23 @@
         <div class="container">
 
 
-            <div class="row" style="margin-top:30px;">
-
-                <div class="col-sm-4">
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Отбележи място и напиши коментар</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <img class="thumbnail img-responsive" src="assets/img/icons/clear_sky.png">
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <div>
-                                            <span class="label label-success"><span class="current-temp">27</span> ℃</span>
-                                        </div>
-                                        <label for="select-city">Избери град:</label>
-                                        <select id="select-city" class="form-control">
-                                            <option value="0" selected>Всички</option>
-                                            <option>София</option>
-                                            <option>Пловдив</option>
-                                            <option>Варна</option>
-                                            <option>Бургас</option>
-                                            <option>Стара Загора</option>
-                                            <option>Русе</option>
-                                            <option>Плевен</option>
-                                            <option>Добрич</option>
-                                            <option>Сливен</option>
-                                            <option>Шумен</option>
-                                            <option>Перник</option>
-                                            <option>Пазарджик</option>
-                                            <option>Ямбол</option>
-                                            <option>Хасково</option>
-                                            <option>Благоевград</option>
-                                            <option>Велико Търново</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                   <div class="col-sm-12">
-                                       <label for="comment">Коментар:</label>
-                                       <textarea class="form-control" rows="3" id="comment"></textarea>
-                                   </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="panel-footer" style="height:55px;">
-                            <button type="button" class="btn btn-primary pull-right publish"><span class="glyphicon glyphicon-globe"></span> Публикувай</button>
-                        </div>
-                    </div>
-                </div>
-                <div id="posts-container" class="col-sm-8">
-                    <div class="row basic-panel post">
-                        <div class="col-sm-2 col-xs-3">
-                            <img src="assets/img/icons/clear_sky.png" class="thumbnail img-responsive">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="basic-panel">
+                        <div class="col-sm-2 col-xs-3 thumbnail">
+                            <img src="assets/img/icons/clear_sky.png">
                         </div>
                         <div class="col-sm-7 col-xs-6">
-                            <span class="label label-success"><span class="current-temp">27</span> ℃</span>
-                            <h4>Пловдив</h4>
+                            <h2>Пловдив</h2>
                             <p>Времето беше супер. Разхождах се по главната. Купих си сладолед и пих вода от чешмичката на джумаята. </p>
                         </div>
                         <div class="col-sm-3 col-xs-3">
                             <button type="button" class="btn btn-danger pull-right remove-post"><span class="glyphicon glyphicon-remove"></span><span class="hidden-xs"> Изтрий</span></button>
+                            <button type="button" class="btn btn-primary pull-right edit-post"><span class="glyphicon glyphicon-edit"></span><span class="hidden-xs"> Промени</span></button>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
 
 </div>
