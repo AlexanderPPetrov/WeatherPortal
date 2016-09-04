@@ -34,6 +34,17 @@ header h1{
     display:inline;
 }
 
+.panel-title {
+    color:#777;
+    font-size:14px;
+}
+
+.help-block {
+    display:none;
+    color:red;
+}
+
+
 /*
     Login and Register
 */
@@ -44,14 +55,10 @@ header h1{
     border: 1px solid #E7E7E7;
     box-shadow: -4px 0px 14px -5px rgba(0,0,0,.1);
     padding:15px;
-    margin:30px 0;
+    margin-top:30px;
 }
 
 
-.login-page .help-block {
-    display:none;
-    color:red;
-}
 
 
 /*
@@ -70,11 +77,11 @@ header h1{
     color: white;
     top: 5px;
     left: 80px;
-    width: 150px;
+    width: 140px;
 }
 
 .current-weather #current-condition {
-    font-size: 9px;
+    font-size: 8px;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #eefd90;
@@ -177,19 +184,27 @@ header h1{
 .friends-page #search-result {
     position: absolute;
     z-index: 9999;
-    left: 18px;
+    left: 31px;
     background: #fefefe;
-    top: 89px;
-    right: 53px;
+    top: 90px;
+    right: 69px;
     border: 1px solid #ccc;
     padding: 5px;
     padding-top: 0;
     display:none;
 }
 
+/*
+    Inbox page
+*/
+
+.inbox-page .btn {
+    margin:5px;
+}
+
 @media screen and (max-width: 767px) {
     h1 {
-        font-size:28px;
+        font-size:26px;
     }
     h2 {
         font-size:24px;
